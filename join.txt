@@ -37,7 +37,14 @@ JOIN `courses` ON `degrees`.`id` = `courses`.`degree_id`
 JOIN `teachers` ON `courses`.`id` = `teachers`.`id`;
 
 6. Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
-
+*** WOKRING ON IT***
+SELECT *
+FROM `departments`
+JOIN `degrees` ON `degrees`.`department_id` = `departments`.`id`
+JOIN `courses` ON `degrees`.`id` = `courses`.`degree_id`
+JOIN `teachers` ON `courses`.`id` = `teachers`.`id`
+WHERE `departments`.`id` = 5;    
+*** WOKRING ON IT***
 
 7. BONUS: Selezionare per ogni studente quanti tentativi d’esame ha sostenuto per
 superare ciascuno dei suoi esami
